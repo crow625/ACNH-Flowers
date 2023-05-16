@@ -1,0 +1,796 @@
+{
+    "flowers": {
+        "tulips": {
+            "white": [
+                "R0Y0W0",
+                "R0Y0W1",
+                "R0Y0W2",
+                "R0Y1W2",
+                "R1Y0W2"
+            ],
+            "red": [
+                "R1Y0W0",
+                "R2Y0W1",
+                "R2Y0W2",
+                "R2Y1W1",
+                "R2Y1W2"
+            ],
+            "yellow": [
+                "R0Y1W0",
+                "R0Y1W1",
+                "R0Y2W0",
+                "R0Y2W1",
+                "R0Y2W2",
+                "R1Y1W1",
+                "R1Y1W2",
+                "R1Y2W1",
+                "R1Y2W2"
+            ],
+            "pink": [
+                "R1Y0W1"
+            ],
+            "orange": [
+                "R1Y1W0",
+                "R1Y2W0"
+            ],
+            "blue": [],
+            "purple": [
+                "R2Y2W0",
+                "R2Y2W1",
+                "R2Y2W2"
+            ],
+            "black": [
+                "R2Y0W0",
+                "R2Y1W0"
+            ],
+            "green": [],
+            "gold": []
+        },
+        "pansies": {
+            "white": [
+                "R0Y0W0",
+                "R0Y0W1"
+            ],
+            "red": [
+                "R1Y0W0",
+                "R1Y0W1",
+                "R2Y0W0",
+                "R2Y0W1",
+                "R2Y1W0",
+                "R2Y1W1"
+            ],
+            "yellow": [
+                "R0Y1W0",
+                "R0Y1W1",
+                "R0Y2W0",
+                "R0Y2W1",
+                "R0Y2W2",
+                "R1Y2W0",
+                "R1Y2W1",
+                "R1Y2W2"
+            ],
+            "pink": [],
+            "orange": [
+                "R1Y1W0",
+                "R1Y1W1",
+                "R1Y1W2",
+                "R2Y2W0",
+                "R2Y2W1"
+            ],
+            "blue": [
+                "R0Y0W2",
+                "R0Y1W2",
+                "R1Y0W2"
+            ],
+            "purple": [
+                "R2Y0W2",
+                "R2Y1W2",
+                "R2Y2W2"
+            ],
+            "black": [],
+            "green": [],
+            "gold": []
+        },
+        "cosmos": {
+            "white": [
+                "R0Y0W0",
+                "R0Y0W1",
+                "R0Y0W2",
+                "R0Y1W2"
+            ],
+            "red": [
+                "R2Y0W0",
+                "R2Y0W1",
+                "R2Y0W2",
+                "R2Y1W2",
+                "R2Y2W2"
+            ],
+            "yellow": [
+                "R0Y1W0",
+                "R0Y1W1",
+                "R0Y2W0",
+                "R0Y2W1",
+                "R0Y2W2"
+            ],
+            "pink": [
+                "R1Y0W0",
+                "R1Y0W1",
+                "R1Y0W2",
+                "R1Y1W2"
+            ],
+            "orange": [
+                "R1Y1W0",
+                "R1Y1W1",
+                "R1Y2W0",
+                "R1Y2W1",
+                "R1Y2W2",
+                "R2Y1W0",
+                "R2Y1W1"
+            ],
+            "blue": [],
+            "purple": [],
+            "black": [
+                "R2Y2W0",
+                "R2Y2W1"
+            ],
+            "green": [],
+            "gold": []
+        },
+        "lilies": {
+            "white": [
+                "R0Y0W0",
+                "R0Y0W1",
+                "R0Y0W2",
+                "R0Y1W1",
+                "R0Y1W2",
+                "R0Y2W2",
+                "R1Y0W2",
+                "R2Y2W2"
+            ],
+            "red": [
+                "R1Y0W0",
+                "R2Y0W1",
+                "R2Y1W1"
+            ],
+            "yellow": [
+                "R0Y1W0",
+                "R0Y2W0",
+                "R0Y2W1",
+                "R1Y1W1",
+                "R1Y1W2",
+                "R1Y2W1",
+                "R1Y2W2"
+            ],
+            "pink": [
+                "R1Y0W1",
+                "R2Y0W2",
+                "R2Y1W2"
+            ],
+            "orange": [
+                "R1Y1W0",
+                "R1Y2W0",
+                "R2Y2W0",
+                "R2Y2W1"
+            ],
+            "blue": [],
+            "purple": [],
+            "black": [
+                "R2Y0W0",
+                "R2Y1W0"
+            ],
+            "green": [],
+            "gold": []
+        },
+        "hyacinths": {
+            "white": [
+                "R0Y0W0",
+                "R0Y0W1",
+                "R0Y1W2",
+                "R1Y0W2"
+            ],
+            "red": [
+                "R1Y0W0",
+                "R2Y0W0",
+                "R2Y0W1",
+                "R2Y0W2",
+                "R2Y1W1",
+                "R2Y1W2"
+            ],
+            "yellow": [
+                "R0Y1W0",
+                "R0Y1W1",
+                "R0Y2W0",
+                "R0Y2W1",
+                "R0Y2W2",
+                "R1Y1W1",
+                "R1Y1W2",
+                "R1Y2W1",
+                "R1Y2W2"
+            ],
+            "pink": [
+                "R1Y0W1"
+            ],
+            "orange": [
+                "R1Y1W0",
+                "R1Y2W0"
+            ],
+            "blue": [
+                "R0Y0W2",
+                "R2Y1W0"
+            ],
+            "purple": [
+                "R2Y2W0",
+                "R2Y2W1",
+                "R2Y2W2"
+            ],
+            "black": [],
+            "green": [],
+            "gold": []
+        },
+        "windflowers": {
+            "white": [
+                "R0Y0W0",
+                "R0Y0W1"
+            ],
+            "red": [
+                "R1Y0W0",
+                "R1Y0W1",
+                "R2Y0W0",
+                "R2Y0W1",
+                "R2Y1W0",
+                "R2Y1W1"
+            ],
+            "yellow": [],
+            "pink": [
+                "R1Y1W0",
+                "R1Y1W1",
+                "R1Y1W2",
+                "R2Y2W0",
+                "R2Y2W1"
+            ],
+            "orange": [
+                "R0Y1W0",
+                "R0Y1W1",
+                "R0Y2W0",
+                "R0Y2W1",
+                "R0Y2W2",
+                "R1Y2W0",
+                "R1Y2W1",
+                "R1Y2W2"
+            ],
+            "blue": [
+                "R0Y0W2",
+                "R0Y1W2",
+                "R1Y0W2"
+            ],
+            "purple": [
+                "R2Y0W2",
+                "R2Y1W2",
+                "R2Y2W2"
+            ],
+            "black": [],
+            "green": [],
+            "gold": []
+        },
+        "mums": {
+            "white": [
+                "R0Y0W0",
+                "R0Y0W1",
+                "R0Y1W2"
+            ],
+            "red": [
+                "R1Y1W1",
+                "R2Y0W0",
+                "R2Y0W1",
+                "R2Y0W2",
+                "R2Y1W2",
+                "R2Y2W2"
+            ],
+            "yellow": [
+                "R0Y1W0",
+                "R0Y1W1",
+                "R0Y2W0",
+                "R0Y2W1",
+                "R0Y2W2",
+                "R1Y1W0"
+            ],
+            "pink": [
+                "R1Y0W0",
+                "R1Y0W1",
+                "R1Y0W2",
+                "R1Y1W2"
+            ],
+            "orange": [],
+            "blue": [],
+            "purple": [
+                "R0Y0W2",
+                "R1Y2W0",
+                "R1Y2W1",
+                "R1Y2W2",
+                "R2Y1W0",
+                "R2Y1W1"
+            ],
+            "black": [],
+            "green": [
+                "R2Y2W0",
+                "R2Y2W1"
+            ],
+            "gold": []
+        },
+        "roses": {
+            "white": [
+                "R0Y0W0B0",
+                "R0Y0W1B0",
+                "R0Y1W1B0",
+                "R0Y2W2B0",
+                "R0Y0W0B1",
+                "R0Y0W1B1",
+                "R0Y1W1B1",
+                "R0Y2W2B1",
+                "R0Y0W0B2",
+                "R0Y0W1B2",
+                "R0Y1W1B2",
+                "R0Y2W2B2",
+                "R1Y0W0B2",
+                "R1Y0W1B2",
+                "R1Y1W1B2",
+                "R1Y2W2B2",
+                "R2Y1W1B2",
+                "R2Y2W2B2"
+            ],
+            "red": [
+                "R1Y0W0B0",
+                "R1Y0W1B0",
+                "R1Y0W2B0",
+                "R1Y1W1B0",
+                "R1Y1W2B0",
+                "R1Y2W2B0",
+                "R2Y1W1B0",
+                "R2Y0W0B1",
+                "R2Y0W1B1",
+                "R2Y0W2B1",
+                "R2Y1W1B1",
+                "R2Y1W2B1",
+                "R2Y2W2B1"
+            ],
+            "yellow": [
+                "R0Y1W0B0",
+                "R0Y2W0B0",
+                "R0Y2W1B0",
+                "R0Y1W0B1",
+                "R0Y2W0B1",
+                "R0Y2W1B1",
+                "R1Y1W0B1",
+                "R1Y2W0B1",
+                "R1Y2W1B1",
+                "R0Y1W0B2",
+                "R0Y2W0B2",
+                "R0Y2W1B2",
+                "R1Y1W0B2",
+                "R1Y2W0B2",
+                "R1Y2W1B2",
+                "R2Y1W0B2",
+                "R2Y2W0B2",
+                "R2Y2W1B2"
+            ],
+            "pink": [
+                "R1Y0W0B1",
+                "R1Y0W1B1",
+                "R1Y0W2B1",
+                "R1Y1W1B1",
+                "R1Y1W2B1",
+                "R1Y2W2B1",
+                "R2Y0W0B2",
+                "R2Y0W1B2",
+                "R2Y0W2B2"
+            ],
+            "orange": [
+                "R1Y1W0B0",
+                "R1Y2W0B0",
+                "R1Y2W1B0",
+                "R2Y1W0B0",
+                "R2Y2W0B0",
+                "R2Y2W1B0",
+                "R2Y1W0B1",
+                "R2Y2W0B1",
+                "R2Y2W1B1"
+            ],
+            "blue": [
+                "R2Y2W2B0"
+            ],
+            "purple": [
+                "R0Y0W2B0",
+                "R0Y1W2B0",
+                "R0Y0W2B1",
+                "R0Y1W2B1",
+                "R0Y0W2B2",
+                "R0Y1W2B2",
+                "R1Y0W2B2",
+                "R1Y1W2B2",
+                "R2Y1W2B2"
+            ],
+            "black": [
+                "R2Y0W0B0",
+                "R2Y0W1B0",
+                "R2Y0W2B0",
+                "R2Y1W2B0"
+            ]
+        }
+    },
+    "genes": {
+        "R0Y0W0": {
+            "roses_B0": "white",
+            "roses_B1": "white",
+            "roses_B2": "white",
+            "tulips": "white",
+            "pansies": "white",
+            "cosmos": "white",
+            "lilies": "white",
+            "hyacinths": "white",
+            "windflowers": "white",
+            "mums": "white"
+        },
+        "R0Y0W1": {
+            "roses_B0": "white",
+            "roses_B1": "white",
+            "roses_B2": "white",
+            "tulips": "white",
+            "pansies": "white",
+            "cosmos": "white",
+            "lilies": "white",
+            "hyacinths": "white",
+            "windflowers": "white",
+            "mums": "white"
+        },
+        "R0Y0W2": {
+            "roses_B0": "purple",
+            "roses_B1": "purple",
+            "roses_B2": "purple",
+            "tulips": "white",
+            "pansies": "blue",
+            "cosmos": "white",
+            "lilies": "white",
+            "hyacinths": "blue",
+            "windflowers": "blue",
+            "mums": "purple"
+        },
+        "R0Y1W0": {
+            "roses_B0": "yellow",
+            "roses_B1": "yellow",
+            "roses_B2": "yellow",
+            "tulips": "yellow",
+            "pansies": "yellow",
+            "cosmos": "yellow",
+            "lilies": "yellow",
+            "hyacinths": "yellow",
+            "windflowers": "orange",
+            "mums": "yellow"
+        },
+        "R0Y1W1": {
+            "roses_B0": "white",
+            "roses_B1": "white",
+            "roses_B2": "white",
+            "tulips": "yellow",
+            "pansies": "yellow",
+            "cosmos": "yellow",
+            "lilies": "white",
+            "hyacinths": "yellow",
+            "windflowers": "orange",
+            "mums": "yellow"
+        },
+        "R0Y1W2": {
+            "roses_B0": "purple",
+            "roses_B1": "purple",
+            "roses_B2": "purple",
+            "tulips": "white",
+            "pansies": "blue",
+            "cosmos": "white",
+            "lilies": "white",
+            "hyacinths": "white",
+            "windflowers": "blue",
+            "mums": "white"
+        },
+        "R0Y2W0": {
+            "roses_B0": "yellow",
+            "roses_B1": "yellow",
+            "roses_B2": "yellow",
+            "tulips": "yellow",
+            "pansies": "yellow",
+            "cosmos": "yellow",
+            "lilies": "yellow",
+            "hyacinths": "yellow",
+            "windflowers": "orange",
+            "mums": "yellow"
+        },
+        "R0Y2W1": {
+            "roses_B0": "yellow",
+            "roses_B1": "yellow",
+            "roses_B2": "yellow",
+            "tulips": "yellow",
+            "pansies": "yellow",
+            "cosmos": "yellow",
+            "lilies": "yellow",
+            "hyacinths": "yellow",
+            "windflowers": "orange",
+            "mums": "yellow"
+        },
+        "R0Y2W2": {
+            "roses_B0": "white",
+            "roses_B1": "white",
+            "roses_B2": "white",
+            "tulips": "yellow",
+            "pansies": "yellow",
+            "cosmos": "yellow",
+            "lilies": "white",
+            "hyacinths": "yellow",
+            "windflowers": "orange",
+            "mums": "yellow"
+        },
+        "R1Y0W0": {
+            "roses_B0": "red",
+            "roses_B1": "pink",
+            "roses_B2": "white",
+            "tulips": "red",
+            "pansies": "red",
+            "cosmos": "pink",
+            "lilies": "red",
+            "hyacinths": "red",
+            "windflowers": "red",
+            "mums": "pink"
+        },
+        "R1Y0W1": {
+            "roses_B0": "red",
+            "roses_B1": "pink",
+            "roses_B2": "white",
+            "tulips": "pink",
+            "pansies": "red",
+            "cosmos": "pink",
+            "lilies": "pink",
+            "hyacinths": "pink",
+            "windflowers": "red",
+            "mums": "pink"
+        },
+        "R1Y0W2": {
+            "roses_B0": "red",
+            "roses_B1": "pink",
+            "roses_B2": "purple",
+            "tulips": "white",
+            "pansies": "blue",
+            "cosmos": "pink",
+            "lilies": "white",
+            "hyacinths": "white",
+            "windflowers": "blue",
+            "mums": "pink"
+        },
+        "R1Y1W0": {
+            "roses_B0": "orange",
+            "roses_B1": "yellow",
+            "roses_B2": "yellow",
+            "tulips": "orange",
+            "pansies": "orange",
+            "cosmos": "orange",
+            "lilies": "orange",
+            "hyacinths": "orange",
+            "windflowers": "pink",
+            "mums": "yellow"
+        },
+        "R1Y1W1": {
+            "roses_B0": "red",
+            "roses_B1": "pink",
+            "roses_B2": "white",
+            "tulips": "yellow",
+            "pansies": "orange",
+            "cosmos": "orange",
+            "lilies": "yellow",
+            "hyacinths": "yellow",
+            "windflowers": "pink",
+            "mums": "red"
+        },
+        "R1Y1W2": {
+            "roses_B0": "red",
+            "roses_B1": "pink",
+            "roses_B2": "purple",
+            "tulips": "yellow",
+            "pansies": "orange",
+            "cosmos": "pink",
+            "lilies": "yellow",
+            "hyacinths": "yellow",
+            "windflowers": "pink",
+            "mums": "pink"
+        },
+        "R1Y2W0": {
+            "roses_B0": "orange",
+            "roses_B1": "yellow",
+            "roses_B2": "yellow",
+            "tulips": "orange",
+            "pansies": "yellow",
+            "cosmos": "orange",
+            "lilies": "orange",
+            "hyacinths": "orange",
+            "windflowers": "orange",
+            "mums": "purple"
+        },
+        "R1Y2W1": {
+            "roses_B0": "orange",
+            "roses_B1": "yellow",
+            "roses_B2": "yellow",
+            "tulips": "yellow",
+            "pansies": "yellow",
+            "cosmos": "orange",
+            "lilies": "yellow",
+            "hyacinths": "yellow",
+            "windflowers": "orange",
+            "mums": "purple"
+        },
+        "R1Y2W2": {
+            "roses_B0": "red",
+            "roses_B1": "pink",
+            "roses_B2": "white",
+            "tulips": "yellow",
+            "pansies": "yellow",
+            "cosmos": "orange",
+            "lilies": "yellow",
+            "hyacinths": "yellow",
+            "windflowers": "orange",
+            "mums": "purple"
+        },
+        "R2Y0W0": {
+            "roses_B0": "black",
+            "roses_B1": "red",
+            "roses_B2": "pink",
+            "tulips": "black",
+            "pansies": "red",
+            "cosmos": "red",
+            "lilies": "black",
+            "hyacinths": "red",
+            "windflowers": "red",
+            "mums": "red"
+        },
+        "R2Y0W1": {
+            "roses_B0": "black",
+            "roses_B1": "red",
+            "roses_B2": "pink",
+            "tulips": "red",
+            "pansies": "red",
+            "cosmos": "red",
+            "lilies": "red",
+            "hyacinths": "red",
+            "windflowers": "red",
+            "mums": "red"
+        },
+        "R2Y0W2": {
+            "roses_B0": "black",
+            "roses_B1": "red",
+            "roses_B2": "pink",
+            "tulips": "red",
+            "pansies": "purple",
+            "cosmos": "red",
+            "lilies": "pink",
+            "hyacinths": "red",
+            "windflowers": "purple",
+            "mums": "red"
+        },
+        "R2Y1W0": {
+            "roses_B0": "orange",
+            "roses_B1": "orange",
+            "roses_B2": "yellow",
+            "tulips": "black",
+            "pansies": "red",
+            "cosmos": "orange",
+            "lilies": "black",
+            "hyacinths": "blue",
+            "windflowers": "red",
+            "mums": "purple"
+        },
+        "R2Y1W1": {
+            "roses_B0": "red",
+            "roses_B1": "red",
+            "roses_B2": "white",
+            "tulips": "red",
+            "pansies": "red",
+            "cosmos": "orange",
+            "lilies": "red",
+            "hyacinths": "red",
+            "windflowers": "red",
+            "mums": "purple"
+        },
+        "R2Y1W2": {
+            "roses_B0": "black",
+            "roses_B1": "red",
+            "roses_B2": "purple",
+            "tulips": "red",
+            "pansies": "purple",
+            "cosmos": "red",
+            "lilies": "pink",
+            "hyacinths": "red",
+            "windflowers": "purple",
+            "mums": "red"
+        },
+        "R2Y2W0": {
+            "roses_B0": "orange",
+            "roses_B1": "orange",
+            "roses_B2": "yellow",
+            "tulips": "purple",
+            "pansies": "orange",
+            "cosmos": "black",
+            "lilies": "orange",
+            "hyacinths": "purple",
+            "windflowers": "pink",
+            "mums": "green"
+        },
+        "R2Y2W1": {
+            "roses_B0": "orange",
+            "roses_B1": "orange",
+            "roses_B2": "yellow",
+            "tulips": "purple",
+            "pansies": "orange",
+            "cosmos": "black",
+            "lilies": "orange",
+            "hyacinths": "purple",
+            "windflowers": "pink",
+            "mums": "green"
+        },
+        "R2Y2W2": {
+            "roses_B0": "blue",
+            "roses_B1": "red",
+            "roses_B2": "white",
+            "tulips": "purple",
+            "pansies": "purple",
+            "cosmos": "red",
+            "lilies": "white",
+            "hyacinths": "purple",
+            "windflowers": "purple",
+            "mums": "red"
+        }
+    },
+    "seeds": [
+        {
+            "flower": "roses",
+            "red": "R2Y0W0B1",
+            "yellow": "R0Y2W0B0",
+            "white": "R0Y0W1B0"
+        },
+        {
+            "flower": "pansies",
+            "red": "R2Y0W0",
+            "yellow": "R0Y2W0",
+            "white": "R0Y0W1"
+        },
+        {
+            "flower": "cosmos",
+            "red": "R2Y0W0",
+            "yellow": "R0Y2W1",
+            "white": "R0Y0W1"
+        },
+        {
+            "flower": "windflowers",
+            "red": "R2Y0W0",
+            "yellow": "R0Y2W0",
+            "white": "R0Y0W1"
+        },
+        {
+            "flower": "mums",
+            "red": "R2Y0W0",
+            "yellow": "R0Y2W0",
+            "white": "R0Y0W1"
+        },
+        {
+            "flower": "tulips",
+            "red": "R2Y0W1",
+            "yellow": "R0Y2W0",
+            "white": "R0Y0W1"
+        },
+        {
+            "flower": "lilies",
+            "red": "R2Y0W1",
+            "yellow": "R0Y2W0",
+            "white": "R0Y0W2"
+        },
+        {
+            "flower": "hyacinths",
+            "red": "R2Y0W1",
+            "yellow": "R0Y2W0",
+            "white": "R0Y0W1"
+        }
+    ]
+}

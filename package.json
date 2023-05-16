@@ -1,0 +1,9 @@
+{
+  "name": "flowers-server",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "start": "cd ./acnh-flowers && npm start"
+  }
+}
