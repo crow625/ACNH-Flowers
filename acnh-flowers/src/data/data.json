@@ -743,54 +743,46 @@
             "mums": "red"
         }
     },
-    "seeds": [
-        {
-            "flower": "roses",
+    "seeds": {
+        "roses": {
             "red": "R2Y0W0B1",
             "yellow": "R0Y2W0B0",
             "white": "R0Y0W1B0"
         },
-        {
-            "flower": "pansies",
+        "pansies": {
             "red": "R2Y0W0",
             "yellow": "R0Y2W0",
             "white": "R0Y0W1"
         },
-        {
-            "flower": "cosmos",
+        "cosmos": {
             "red": "R2Y0W0",
             "yellow": "R0Y2W1",
             "white": "R0Y0W1"
         },
-        {
-            "flower": "windflowers",
+        "windflowers": {
             "red": "R2Y0W0",
             "yellow": "R0Y2W0",
             "white": "R0Y0W1"
         },
-        {
-            "flower": "mums",
+        "mums": {
             "red": "R2Y0W0",
             "yellow": "R0Y2W0",
             "white": "R0Y0W1"
         },
-        {
-            "flower": "tulips",
+        "tulips": {
             "red": "R2Y0W1",
             "yellow": "R0Y2W0",
             "white": "R0Y0W1"
         },
-        {
-            "flower": "lilies",
+        "lilies": {
             "red": "R2Y0W1",
             "yellow": "R0Y2W0",
             "white": "R0Y0W2"
         },
-        {
-            "flower": "hyacinths",
+        "hyacinths": {
             "red": "R2Y0W1",
             "yellow": "R0Y2W0",
             "white": "R0Y0W1"
         }
-    ]
+    }
 }
