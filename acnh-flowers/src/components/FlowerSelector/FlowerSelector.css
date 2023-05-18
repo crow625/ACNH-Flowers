@@ -1,0 +1,21 @@
+.flower-selector-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightyellow;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .flower-selector {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .flower-name {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+  }

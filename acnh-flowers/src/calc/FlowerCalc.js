@@ -120,4 +120,4 @@ const geneProbability = (arr) => {
     return output;
 }
 
-export { punnett, breed, genesFromString, stringFromGenes };
+export { breed, geneProbability, genesFromString, stringFromGenes };

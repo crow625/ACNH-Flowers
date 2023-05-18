@@ -1,0 +1,16 @@
+.gene-selector-body {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px;
+  }
+  
+  .gene-selector {
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+  }
