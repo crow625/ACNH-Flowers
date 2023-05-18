@@ -11,21 +11,21 @@ const GeneSelector = ({flower, setFlower, flowerType, ...rest}) => {
     return (
         <div className='gene-selector-body' {...rest}>
           <div className='gene-selector'>
-            <select defaultValue={flower[flowerType].r} onChange={(e) => handleSetFlower('r', e.target.value)}>
+            <select value={flower[flowerType].r} onChange={(e) => handleSetFlower('r', e.target.value)}>
               <option value={0}>0</option>
               <option value={1}>1</option>
               <option value={2}>2</option>
             </select>
           </div>
           <div className='gene-selector'>
-            <select defaultValue={flower[flowerType].y} onChange={(e) => handleSetFlower('y', e.target.value)}>
+            <select value={flower[flowerType].y} onChange={(e) => handleSetFlower('y', e.target.value)}>
               <option value={0}>0</option>
               <option value={1}>1</option>
               <option value={2}>2</option>
             </select>
           </div>
           <div className='gene-selector'>
-            <select defaultValue={flower[flowerType].w} onChange={(e) => handleSetFlower('w', e.target.value)}>
+            <select value={flower[flowerType].w} onChange={(e) => handleSetFlower('w', e.target.value)}>
               <option value={0}>0</option>
               <option value={1}>1</option>
               <option value={2}>2</option>
@@ -34,7 +34,7 @@ const GeneSelector = ({flower, setFlower, flowerType, ...rest}) => {
           {
             flowerType === 'roses' ? 
             <div className='gene-selector'>
-              <select defaultValue={flower[flowerType].b} onChange={(e) => handleSetFlower('b', e.target.value)}>
+              <select value={flower[flowerType].b} onChange={(e) => handleSetFlower('b', e.target.value)}>
                 <option value={0}>0</option>
                 <option value={1}>1</option>
                 <option value={2}>2</option>

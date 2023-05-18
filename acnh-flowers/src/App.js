@@ -25,6 +25,9 @@ const App = () => {
 
   }, [data]);
 
+  // set flowers A and B to be an object
+  // that maps each flower type to the selected genes for that flower
+  // so selecting genes for one species will not affect your selection for another species
   useEffect(() => {
     const initFlowers = async () => {
       setLoading(true);
@@ -40,10 +43,12 @@ const App = () => {
     initFlowers();
   }, [flowerList, data]);
 
+  // don't finish loading until flowerA and flowerB have been properly set
   useEffect(() => {
     if (Object.keys(flowerA).length && Object.keys(flowerB).length) setLoading(false);
   }, [flowerA, flowerB]);
 
+  // set flowerA and flowerB with their new genes
   const handleSetFlowerA = (newGenes) => {
     setFlowerA(prevFlower => {
       const newFlower = {...prevFlower};
@@ -60,6 +65,18 @@ const App = () => {
     });
   }
 
+  // gets a flower's color based on its genes object
+  const getColor = (genes) => {
+    let geneString = stringFromGenes(genes);
+    let newGeneString = geneString;
+    let newFlowerType = flowerType;
+    if (newGeneString.length > 6) {
+      newGeneString = newGeneString.substring(0, 6);
+      newFlowerType = newFlowerType.concat("_" + geneString.substring(6, 8));
+    }
+    return data.genes[newGeneString][newFlowerType];
+  }
+
   if (loading) return null;
 
   return (
@@ -70,9 +87,11 @@ const App = () => {
         <div className='flower-genes'>
           <div className='flower-A'>
             <GeneSelector flower={flowerA} setFlower={handleSetFlowerA} flowerType={flowerType} />
+            <p>{getColor(flowerA[flowerType])}</p>
           </div>
           <div className='flower-B'>
             <GeneSelector flower={flowerB} setFlower={handleSetFlowerB} flowerType={flowerType} />
+            <p>{getColor(flowerB[flowerType])}</p>
           </div>
         </div>
       </div>
