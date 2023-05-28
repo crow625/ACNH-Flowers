@@ -1,5 +1,5 @@
 // Takes two gene values, a and b, which could be any combination of 0, 1, and 2
-// And returns an list of each possible gene outcome
+// And returns a list of each possible gene outcome
 const punnett = (a, b) => {
     
     a = parseInt(a);
@@ -102,18 +102,19 @@ const stringFromGenes = (obj) => {
 
 // counts the number of times a specific element appears in an array
 // returns an object that maps the element to its number of appearances divided by total number of elements
+// keys - flower gene strings
+// values - probability of that gene string resulting
 const geneProbability = (arr) => {
-    const output = {
-        total: arr.length
-    };
 
+    const output = {};
+    
     for (const gene of arr) {
         output[gene] = output[gene] ? output[gene] + 1 : 1;
     }
 
     for (const gene of Object.keys(output)) {
         if (gene !== "total") {
-            output[gene] = output[gene] / output.total;
+            output[gene] = output[gene] / arr.length;
         }
     }
     

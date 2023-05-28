@@ -1,6 +1,6 @@
 import './FlowerSelector.css';
 
-const FlowerSelector = ({flowerList, flowerType, setFlowerType, ...rest}) => {
+const FlowerSelector = ({flowerList, flowerType, setFlowerType, id, ...rest}) => {
     
     return (
         <div className='flower-selector-body' {...rest}>
@@ -10,13 +10,13 @@ const FlowerSelector = ({flowerList, flowerType, setFlowerType, ...rest}) => {
                 <input 
                     className='flower-button'
                     type="radio" 
-                    id={item}
-                    name="flower-selector" 
+                    id={item + '-' + id}
+                    name={"flower-selector-" + id} 
                     value={item} 
                     onChange={(e) => setFlowerType(e.target.value)}
                     checked={flowerType === item}
                 />
-                <label htmlFor={item} className='flower-name'>{item}</label>
+                <label htmlFor={item + '-' + id} className='flower-name'>{item}</label>
               </div>
             )
           })}

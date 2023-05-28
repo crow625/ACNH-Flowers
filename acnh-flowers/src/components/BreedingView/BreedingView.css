@@ -1,0 +1,30 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .flower-genes {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .breed-results {
+    width: 30%
+  }
+  
+  .breed-title {
+    background-color: lightyellow;
+    font-size: 2rem;
+  }
+  
+  .breed-outcome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem
+  }
