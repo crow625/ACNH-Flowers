@@ -4,7 +4,7 @@ import FlowerSelector from '../FlowerSelector';
 import { GeneSelector } from '../GeneSelector';
 import './BreedingView.css'
 
-const BreedingView = ({data, flowerList, id, defaultFlowerType, defaultGenes, ...rest}) => {
+const BreedingView = ({data, flowerList, id, defaultFlowerType, defaultGenes, destroyBreedingView, ...rest}) => {
 
     const [ loading, setLoading ] = useState(true);
     const [ flowerType, setFlowerType ] = useState('');
@@ -64,7 +64,7 @@ const BreedingView = ({data, flowerList, id, defaultFlowerType, defaultGenes, ..
         });
     }
 
-    // gets a flower's color based on its genes object
+    // gets a flower's color based on its genes
     const getColor = (genes) => {
         let geneString = (typeof genes === 'object') ? stringFromGenes(genes) : genes;
         let newGeneString = geneString;
@@ -85,7 +85,12 @@ const BreedingView = ({data, flowerList, id, defaultFlowerType, defaultGenes, ..
 
     return (
         <div className='body' {...rest}>
-            <FlowerSelector flowerList={flowerList} flowerType={flowerType} setFlowerType={setFlowerType} id={id} />
+            <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '10%'}}>
+                <FlowerSelector flowerList={flowerList} flowerType={flowerType} setFlowerType={setFlowerType} id={id} />
+                <div>
+                    <input type='button' onClick={() => destroyBreedingView(id)} value="Close" />
+                </div>
+            </div>
             <div className='flower-genes'>
                 <div className='flower-A'>
                     <GeneSelector flower={flowerA} setFlower={handleSetFlowerA} flowerType={flowerType} id={'A' + id} />

@@ -46,8 +46,8 @@ const App = () => {
       setFlowerList(Object.keys(data.seeds));
       setBreedingViews([{
         id: 0,
-        defaultFlowerType: 'mums',
-        defaultGenes: genesFromString(data.seeds['mums'].yellow)
+        defaultFlowerType: 'roses',
+        defaultGenes: genesFromString(data.seeds['roses'].red)
       }]);
       setNextBreedingView(prev => prev + 1);
     }
@@ -66,7 +66,11 @@ const App = () => {
   }
 
   const destroyBreedingView = (i) => {
-
+    if (breedingViews.length === 1) return;
+    setBreedingViews(prev => {
+        const newBreedingViews = prev.filter((item) => item.id !== i);
+        return newBreedingViews;
+    })
   }
 
   if (loading) return null;
@@ -74,21 +78,24 @@ const App = () => {
   return (
     <>
       <h1>Hello!</h1>
-      {
-        breedingViews.map((b, i) => {
-          // the new breeding view cannot access the selected genes and flower type of the previous one
-          return (
-            <BreedingView 
-              data={data} 
-              flowerList={flowerList} 
-              defaultFlowerType={b.defaultFlowerType}
-              defaultGenes={b.defaultGenes} 
-              id={b.id} 
-              key={i} 
-            />
-          )
-        })
-      }
+      <div>
+        {
+            breedingViews.map((b, i) => {
+            // the new breeding view cannot access the selected genes and flower type of the previous one
+            return (
+                <BreedingView 
+                    data={data} 
+                    flowerList={flowerList} 
+                    defaultFlowerType={b.defaultFlowerType}
+                    defaultGenes={b.defaultGenes} 
+                    id={b.id} 
+                    key={i} 
+                    destroyBreedingView={destroyBreedingView}
+                />
+            )
+            })
+        }
+      </div>
       
       <input type='button' onClick={handleAddBreedingView} value="Create new breeding view" />
     </>
