@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { breed, geneProbability, genesFromString, stringFromGenes } from '../../calc/FlowerCalc';
-import FlowerSelector from '../FlowerSelector';
-import { GeneSelector } from '../GeneSelector';
+import { breed, geneProbability, genesFromString, stringFromGenes } from 'calc/FlowerCalc';
+import FlowerSelector from 'components/FlowerSelector';
+import { GeneSelector } from 'components/GeneSelector';
 import './BreedingView.css'
 
 const BreedingView = ({data, flowerList, id, defaultFlowerType, defaultGenes, destroyBreedingView, ...rest}) => {

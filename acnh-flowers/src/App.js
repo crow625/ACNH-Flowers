@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { genesFromString } from './calc/FlowerCalc';
-import BreedingView from './components/BreedingView/BreedingView';
+import { genesFromString } from 'calc/FlowerCalc';
+import BreedingView from 'components/BreedingView/BreedingView';
 import './App.css'
 
 // Future work:
