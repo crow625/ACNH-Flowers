@@ -1,16 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { breed, geneProbability, genesFromString, stringFromGenes } from 'calc/FlowerCalc';
 import FlowerSelector from 'components/FlowerSelector';
 import { GeneSelector } from 'components/GeneSelector';
+import DataContext from 'contexts/DataContext';
 import './BreedingView.css'
 
-const BreedingView = ({data, flowerList, id, defaultFlowerType, defaultGenes, destroyBreedingView, ...rest}) => {
+const BreedingView = ({flowerList, id, defaultFlowerType, defaultGenes, destroyBreedingView, ...rest}) => {
 
     const [ loading, setLoading ] = useState(true);
     const [ flowerType, setFlowerType ] = useState('');
     const [ flowerA, setFlowerA ] = useState({});
     const [ flowerB, setFlowerB ] = useState({});
     const [ breedOutput, setBreedOutput ] = useState({});
+    const { flowers, genes, seeds } = useContext(DataContext);
 
     // set flowers A and B to be an object
     // that maps each flower type to the selected genes for that flower
@@ -23,18 +25,18 @@ const BreedingView = ({data, flowerList, id, defaultFlowerType, defaultGenes, de
             if (curr === defaultFlowerType) {
                 return {...acc, [curr]: defaultGenes}
             }
-            return {...acc, [curr]: genesFromString(data.seeds[curr].red)}
+            return {...acc, [curr]: genesFromString(seeds[curr].red)}
         }, {}));
         setFlowerB(flowerList.reduce((acc, curr) => {
             if (curr === defaultFlowerType) {
                 return {...acc, [curr]: defaultGenes}
             }
-            return {...acc, [curr]: genesFromString(data.seeds[curr].red)}
+            return {...acc, [curr]: genesFromString(seeds[curr].red)}
         }, {}));
         }
 
         initFlowers();
-    }, [flowerList, data, defaultFlowerType, defaultGenes]);
+    }, [flowerList, defaultFlowerType, defaultGenes, seeds]);
 
     // don't finish loading until flowerA and flowerB and their breedOutput have been properly set
     useEffect(() => {
@@ -65,20 +67,20 @@ const BreedingView = ({data, flowerList, id, defaultFlowerType, defaultGenes, de
     }
 
     // gets a flower's color based on its genes
-    const getColor = (genes) => {
-        let geneString = (typeof genes === 'object') ? stringFromGenes(genes) : genes;
+    const getColor = (g) => {
+        let geneString = (typeof g === 'object') ? stringFromGenes(g) : g;
         let newGeneString = geneString;
         let newFlowerType = flowerType;
         if (newGeneString.length > 6) {
             newGeneString = newGeneString.substring(0, 6);
             newFlowerType = newFlowerType.concat("_" + geneString.substring(6, 8));
         }
-        return data.genes[newGeneString][newFlowerType];
+        return genes[newGeneString][newFlowerType];
     }
 
     const isSeed = (genes) => {
         let geneString = (typeof genes === 'object') ? stringFromGenes(genes) : genes;
-        return Object.values(data.seeds[flowerType]).includes(geneString);
+        return Object.values(seeds[flowerType]).includes(geneString);
     }
 
     if (loading) return null;

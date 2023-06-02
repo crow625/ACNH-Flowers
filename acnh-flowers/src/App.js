@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { genesFromString } from 'calc/FlowerCalc';
 import BreedingView from 'components/BreedingView/BreedingView';
+import DataContext from 'contexts/DataContext';
 import './App.css'
 
 // Future work:
@@ -34,27 +35,27 @@ import './App.css'
 const App = () => {
 
   const [ loading, setLoading ] = useState(true);
-  const data = require('./data/data.json');
   const [ flowerList, setFlowerList ] = useState([]);
   const [ breedingViews, setBreedingViews ] = useState([]);
   const [ nextBreedingView, setNextBreedingView ] = useState(0);
+  const { flowers, genes, seeds } = useContext(DataContext);
 
   // set the list of flowers
   useEffect(() => {
     const getData = async () => {
       setLoading(true);
-      setFlowerList(Object.keys(data.seeds));
+      setFlowerList(Object.keys(seeds));
       setBreedingViews([{
         id: 0,
         defaultFlowerType: 'roses',
-        defaultGenes: genesFromString(data.seeds['roses'].red)
+        defaultGenes: genesFromString(seeds['roses'].red)
       }]);
       setNextBreedingView(prev => prev + 1);
     }
 
     getData().then(() => setLoading(false));
 
-  }, [data]);
+  }, [seeds]);
 
   const handleAddBreedingView = () => {
     setBreedingViews(prev => [...prev, {
@@ -83,8 +84,7 @@ const App = () => {
             breedingViews.map((b, i) => {
             // the new breeding view cannot access the selected genes and flower type of the previous one
             return (
-                <BreedingView 
-                    data={data} 
+                <BreedingView
                     flowerList={flowerList} 
                     defaultFlowerType={b.defaultFlowerType}
                     defaultGenes={b.defaultGenes} 
